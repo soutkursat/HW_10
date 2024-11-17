@@ -1,0 +1,16 @@
+  237  git add .
+  238  git commit -m "main_test eklendi"
+  239  git push origin main\n
+  240  git branch develop
+  241  git checkout develop
+  242  git checkout -b develop
+  243  touch develop_test.txt
+  244  git add .
+  245  git commit -m "develop_test.txt eklendi"
+  246  echo "bu develop branchi icin bir test dosyasi" >> develop_test.txt
+  247  git status
+  248  git add .
+  249  git commit -m "develop_test.txt guncellendi"
+  250  git checkout main 
+  251  git merge develop
+  252  git log --oneline
